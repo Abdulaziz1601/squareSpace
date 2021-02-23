@@ -1,0 +1,40 @@
+.preview {
+    background: url('../img/background/prev_bg.png') center center / cover no-repeat;
+    padding: 93px 0 173px 0;
+    font-weight: 400;
+    font-size: 18px;
+    color: $white;
+    &__left-block {
+        width: 500px;
+    }
+ 
+    &__info {
+        color: $darkwhite;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        :last-child {
+            margin-left: 49px;
+        }
+        
+        &-item {
+            line-height: 22px;
+            
+        }
+    }   
+    .title {
+        margin-top: 13px;
+        font-size: 72px;
+        line-height: 72px;
+        color: $white;
+    }
+    .descr {
+        margin-top: 22px;
+        font-size: 22px;
+        color: $white;
+    }
+    .btn {
+        margin-top: 46px;
+    }
+
+}

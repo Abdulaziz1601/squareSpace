@@ -1,0 +1,24 @@
+.possibility {
+    padding: 125px 0;
+    background: url('../img/background/possibility_bg.png');
+    text-align: center;
+
+    .title {
+        color: $white;
+    }
+    .descr {
+        color: $white;
+    }
+    &__link {
+        display: inline-block;
+        color: $white;
+        margin-top: 21px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        text-decoration: underline;
+        text-transform: uppercase;
+    }
+
+
+}

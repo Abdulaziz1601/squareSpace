@@ -1,0 +1,56 @@
+
+.instruction {
+    position: relative;
+    padding: 73px 0 77px 0;
+    background-color: $bg2;
+    .instruction__icon {
+        &-logo{
+            position: absolute;
+            top: 50px;
+        }
+        &-close {
+            position: absolute;
+            top: 40px;
+            right: 33px;
+        }
+    }
+    .title {
+        text-align: center;
+    }
+    .descr {
+        width: 569px;
+        margin: 22px auto 0;
+        text-align: center;
+    }
+    .box {
+        text-align: left;
+        margin-left: 40px;
+        &:first-child {
+            margin: 0;
+        }
+        &__wrapper {
+            margin-top: 77px;
+            display: flex;
+            align-items: center;
+
+        }
+        img {
+            width: 375px;
+        }
+        &__title {
+            margin-top: 40px;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 34px;
+        }
+        &__subtitle {
+            margin-top: 6px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+
+        }
+        
+
+    }
+}
