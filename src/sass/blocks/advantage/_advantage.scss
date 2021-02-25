@@ -8,8 +8,11 @@
     .descr {
         color: $white
     }
-    .wrapper {
-    
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        #info {order: 2;}
+        #aimg {order: 1;}
     }
     &__block {
         margin-top: 120px;

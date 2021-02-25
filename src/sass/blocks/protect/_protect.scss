@@ -1,0 +1,27 @@
+.protect {
+    .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+    .title {
+        text-align: left;
+        margin-top: 186px;
+    }
+    .descr {
+        text-align: left;
+        margin-top: 24px;
+    }
+    &__info {
+        width: 543px;
+    }
+    &__parallax {
+        display: inline-block;
+        min-height: 500px; 
+        width: 660px;
+        background: url('../img/background/parallax.png');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+
+    }
+}
