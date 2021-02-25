@@ -1,3 +1,40 @@
 .advantage {
+    padding: 80px 120px;
+    color: $white;
     background-color: $primary;
+    .title {
+        color: $white
+    }
+    .descr {
+        color: $white
+    }
+    .wrapper {
+    
+    }
+    &__block {
+        margin-top: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__info {
+        width: 540px;
+    }
+    &__subtitle{
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 40px;
+    }
+    &__subtext {
+        margin-top: 23px;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 26px;
+        font-family: Roboto;
+    }
+    &__img {
+        img {
+            width: 75vh;
+        }
+    }
 }
