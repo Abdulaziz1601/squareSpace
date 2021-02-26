@@ -1,5 +1,5 @@
 .advantage {
-    padding: 80px 120px;
+    padding: 80px 0 120px;
     color: $white;
     background-color: $primary;
     .title {
@@ -36,8 +36,5 @@
         font-family: Roboto;
     }
     &__img {
-        img {
-            width: 75vh;
-        }
     }
 }
