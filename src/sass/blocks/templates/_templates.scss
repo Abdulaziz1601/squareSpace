@@ -1,0 +1,20 @@
+.templates {
+    padding: 80px 0;
+
+    &__wrapper {
+        width: 628px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__link{
+        display: inline-block;
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        text-decoration: underline;
+        color: #000000;
+        -moz-text-decoration-line: underline;
+    }
+        
+}
