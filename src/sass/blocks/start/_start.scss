@@ -1,0 +1,46 @@
+.start {
+    padding: 80px 0;
+    color: $white;
+    background-color: $dark;
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: top; 
+        justify-content: space-between;
+    }   
+    &__left-block {
+        .title {
+            color: $white;
+            text-align: left;
+        }
+    }
+    &__right-block {
+        width: 550px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+    &__link {
+        margin-top: 30px;
+        display: inline-block;
+        text-decoration: underline;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        -moz-text-decoration-line: underline;
+        display: flex; 
+        align-items: center;
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 16px;
+            height: 22px;
+            margin-left: 5px;
+            background: url('../icons/nextArrow.svg') center center / contain no-repeat
+        }
+}
+    &__list-item {
+        margin-top: 27px;
+        padding-inline-start: 5px;        
+        &:first-child{margin: 0;}
+    }
+}
