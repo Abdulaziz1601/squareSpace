@@ -1,8 +1,10 @@
-
 .instruction {
     position: relative;
     padding: 73px 0 77px 0;
     background-color: $bg2;
+    img {
+        width: 100%;
+    }
     .instruction__icon {
         &-logo{
             position: absolute;
@@ -22,20 +24,17 @@
         margin: 22px auto 0;
         text-align: center;
     }
+    .box__wrapper {
+        margin-top: 77px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
     .box {
         text-align: left;
-        margin-left: 40px;
+        max-width: 450px;
         &:first-child {
             margin: 0;
-        }
-        &__wrapper {
-            margin-top: 77px;
-            display: flex;
-            align-items: center;
-
-        }
-        img {
-            width: 375px;
         }
         &__title {
             margin-top: 40px;

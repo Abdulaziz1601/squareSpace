@@ -29,5 +29,8 @@
     "> 1%",
     "maintained node versions",
     "not dead"
-  ]
+  ],
+  "dependencies": {
+    "i": "^0.3.6"
+  }
 }
