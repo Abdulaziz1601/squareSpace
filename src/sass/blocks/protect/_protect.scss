@@ -1,23 +1,23 @@
 .protect {
-    .container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
     .title {
         text-align: left;
-        margin-top: 186px;
+        margin-top: 18.6rem;
     }
     .descr {
         text-align: left;
-        margin-top: 24px;
+        margin-top: 2.4rem;
     }
     &__info {
-        width: 543px;
+        width: 54.3rem;
     }
     &__parallax {
-        min-height: 500px; 
-        width: 660px;
+        min-height: 50rem; 
+        width: 66rem;
         background: url('../img/background/parallax.png');
         background-attachment: fixed;
         background-repeat: no-repeat;

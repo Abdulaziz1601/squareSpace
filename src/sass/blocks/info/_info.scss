@@ -1,6 +1,6 @@
 .info {
     position: relative;
-    padding: 80px  0 117px;
+    padding: 8rem  0 11.7rem;
     color: #FFFFFF;
     background-color: $primary;
     .container {
@@ -10,59 +10,38 @@
         justify-content: space-between;
     }
     &__wrapper {
-        width: 543px;
+        width: 54rem;
     }
     &__descr{ 
-        font-size: 28px;
-        line-height: 34px;
+        font-size: 2.8rem;
+        line-height: 3.4rem;
         color: #FFFFFF;
     }
     &__author{
-        margin-top: 190px;
-        font-size: 18px;
-        line-height: 22px;
+        margin-top: 19rem;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
         text-transform: uppercase;
     }
-    &__site{
+    &__site {
         display: inline-block;
-        margin-top: 10px;
-        font-size: 18px;
-        line-height: 22px;
+        margin-top: 1rem;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
         text-decoration-line: underline;
         text-transform: uppercase;
         color: rgba(255, 255, 255, 0.27);
     }
-    .info__slick-slide{
-        width: 700px;
+    .info__slick-slide {
+        width: 70rem;
     }
-    .slick {
-        &-btn{
-            position: absolute;
-            bottom: -30px;
-            background-color: transparent;
-            border: none;
-            img {
-                width: 25px;
-            }
-        }
-        &-next{
-            right: 107px;
-        }
-        &-prev{
-            right: 145px;
-        }
-        
-        
-    }
-    .slick-track {
-        width: 700px;
-    }
+   
     &__index {
         position: absolute;
-        bottom: 83px;
-        right: 235px;    
-        font-size: 18px;
-        line-height: 22px;
+        bottom: 8.3rem;
+        right: 23.5rem;    
+        font-size: 1.8rem;
+        line-height: 2.2rem;
         text-transform: uppercase;
     }
 
