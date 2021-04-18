@@ -9,16 +9,16 @@
     text-transform: uppercase;
     font-size: 1.4rem;
     line-height: 1.4rem;
-    a {
-        color: $white;
-    }
     &__links {
         width: 33.5rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-   
+    &__link {
+        color: $white;
+    }
+    &__log-in {color: $white;}
     .btn__white {
         margin-left: 4rem;
     }
