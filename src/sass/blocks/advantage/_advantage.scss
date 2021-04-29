@@ -36,5 +36,8 @@
     }
     &__img {
         width: 55rem;
+        img {
+            width: 100%;
+        }
     }
 }

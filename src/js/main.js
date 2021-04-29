@@ -1,29 +1,6 @@
 "use strict";
-// $(document).ready(function(){
-//     // $('.info__slick-slide').slick({
-//     //     autoplay: true,
-//     //     infinite: true,
-//     //     speed: 500,
-//     //     fade: true,
-//     //     nextArrow: '<button class="slick-next slick-btn"><img src="icons/nextArrow.svg" alt=""> </button>',
-//     //     prevArrow: '<button class="slick-prev slick-btn"><img src="icons/prevArrow.svg" alt=""> </button>',
-//     // });
-
-//     $('.templates__slick-slide').slick({
-//       autoplay: true,
-//       infinite: true,
-//       slidesToShow: 2,
-//       slidesToScroll: 1,
-//       nextArrow: '<button class="slick-next slick-btn"><img src="icons/nextArrow.svg" alt=""> </button>',
-//       prevArrow: '<button class="slick-prev slick-btn"><img src="icons/prevArrow.svg" alt=""> </button>',
-//     });
-   
-//   });
-
-  //SLIDER
-
-
-const slides = document.querySelectorAll('.info__slider'),
+//SLIDER
+const slides = document.querySelectorAll('.info__slide'),
       slider = document.querySelector('.info__slider'),
       prev = document.querySelector('.info__slider-prev'),
       next = document.querySelector('.info__slider-next'),
@@ -44,8 +21,57 @@ if (slides.length < 10) { // If length of slide is less than 10, then we add 0
 
 let offset = 0; // offset to move slides
 slidesField.style.width = 100 * slides.length + '%'; //In our case it is 400%
-slidesField.style.display = 'flex'; // display:flex helps us to make elements in a row
 slidesField.style.transition = '.5s all'; //smooth transition
-
 slidesWrapper.style.overflow = 'hidden'; // we hide another slides, and move slidesFiel
     
+slides.forEach(slide => {
+	slide.style.width = width;
+});
+
+const onlyNum = str => +str.replace(/\D/g, "");
+
+next.addEventListener('click', () => {
+		if (offset == onlyNum(width) * (slides.length - 1)) {
+            offset = 0;
+        } else {
+            offset += onlyNum(width); // when next is clicked offset grows
+        } // so it will move to left to -X, by making slides to pass next after another
+        slidesField.style.transform = `translateX(-${offset}px)`;
+
+        if (slideIndex == slides.length) { // whenever index is at the end, it returns to first slide 
+            slideIndex = 1;
+        } else {
+            slideIndex++;
+        }
+
+        if (slides.length < 10) {
+            current.textContent = `0${slideIndex}`;
+        } else {
+            current.textContent = slideIndex;
+        }
+
+    });
+
+    prev.addEventListener('click', () => {
+
+        if (offset == 0) { // when offset is at 0 - before 1St slide ->
+            offset = onlyNum(width) * (slides.length - 1); // it will move to the last slide
+        } else {
+            offset -= onlyNum(width); // offset decreases so 
+        }
+        slidesField.style.transform = `translateX(-${offset}px)`; // field is moved to right, 
+        // which imitates elements moving left
+
+        if (slideIndex == 1) {
+            slideIndex = slides.length;
+        } else {
+            slideIndex--;
+        }
+
+        if (slides.length < 10) {
+            current.textContent = `0${slideIndex}`;
+        } else {
+            current.textContent = slideIndex;
+        }
+
+    });
