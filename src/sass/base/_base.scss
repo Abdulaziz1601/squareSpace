@@ -115,3 +115,14 @@ ul li {
 .slick-track {
     width: 70rem;
 }
+
+.arrow-effect {
+    @include arrow;
+}
+
+.arrow-effect-big {
+    @include arrow;
+    width: 24rem;
+}
+
+

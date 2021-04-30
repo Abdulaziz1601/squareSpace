@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic-ext');
 @import './variables/variables';
+@import './variables/mixins';
+
 
 @import './base/base';
 @import './base/utilities';
@@ -13,6 +15,8 @@
 @import './blocks/info/info';
 @import './blocks/templates/templates';
 @import './blocks/start/start';
+
+
 // @import './blocks/media/media';
 
 
