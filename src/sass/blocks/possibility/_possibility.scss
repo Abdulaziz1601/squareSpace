@@ -2,23 +2,16 @@
     padding: 12.5rem 0;
     background: url('../img/background/possibility_bg.png') center center / cover no-repeat;
 
-    .title {
-        color: $white;
-    }
-    .descr {
-        color: $white;
-    }
-
-      &__link {
-        display: block;
-        color: $white;
-        margin: 0 auto;
-        margin-top: 2.1rem;
-        font-weight: 400;
-        font-size: 1.8rem;
-        line-height: 2.2rem;
-        text-decoration: underline;
-        text-transform: uppercase;
-    }
+    &__link {
+    display: block;
+    color: $color-white;
+    margin: 0 auto;
+    margin-top: 2.1rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
     
 }

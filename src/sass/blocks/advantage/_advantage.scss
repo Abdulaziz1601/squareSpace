@@ -1,13 +1,7 @@
 .advantage {
     padding: 8rem 0 12rem;
-    color: $white;
-    background-color: $primary;
-    .title {
-        color: $white
-    }
-    .descr {
-        color: $white
-    }
+    color: $color-white;
+    background-color: $color-secondary-light;
     &__wrapper {
         display: flex;
         flex-direction: column;

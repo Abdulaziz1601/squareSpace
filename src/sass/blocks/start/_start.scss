@@ -1,7 +1,7 @@
 .start {
     padding: 8rem 0;
-    color: $white;
-    background-color: $dark;
+    color: $color-white;
+    background-color: $color-black;
     .container {
         display: flex;
         flex-direction: row;
@@ -10,7 +10,7 @@
     }   
     &__left-block {
         .title {
-            color: $white;
+            color: $color-white;
             text-align: left;
         }
     }

@@ -32,7 +32,7 @@ ul li {
         font-weight: 400;
         font-size: 1.4rem;
         text-transform: uppercase;
-        background-color: $white;
+        background-color: $color-white;
         border: none;
         cursor: pointer;
         position: relative;
@@ -41,7 +41,7 @@ ul li {
 
     &:hover {
         transform: translateY(-2px);
-        box-shadow: 0 1rem 1rem rgba($dark, 0.5);
+        box-shadow: 0 1rem 1rem rgba($color-black, 0.5);
 
         &::after {
             transform: scaleX(1.5) scaleY(1.2);
@@ -51,7 +51,7 @@ ul li {
 
     &:active {
         transform: translateY(0);
-        box-shadow: 0 .5rem 1rem rgba($dark, 0.5);
+        box-shadow: 0 .5rem 1rem rgba($color-black, 0.5);
     }
 
     &::after {
@@ -68,31 +68,54 @@ ul li {
 
     
     &__white {
-        background-color: $white;
-        color: $dark;
+        background-color: $color-white;
+        color: $color-black;
         &::after {
-            background-color: $white;
+            background-color: $color-white;
         }
     }
     &__min {
         width: 15.6rem;   
     }
 }
+//TITLE and DESCRIPTION
 .title {
     text-align: center;
     font-weight: 400;
     font-size: 5.6rem;
     line-height: 5.6rem;
-    color: $dark;
+    color: $color-black;
+
+    &--white {
+        color: $color-white
+    }
+
+    &--large {
+        text-align: left;
+        margin-top: 1.3rem;
+        font-size: 7.2rem;
+        line-height: 7.2rem;
+    }
 }
+
 .descr {
-    text-align: center;
     margin-top: 2.2rem;
-    font-weight: 400;
     font-size: 2.2rem;
+    text-align: center;
+    font-weight: 400;
     line-height: 2.6rem;
-    color: $dark;
+    color: $color-black;
+
+    &--white {
+        color: $color-white
+    }
+
+    &--large {
+        font-size: 2.8rem;
+        line-height: 3.4rem;
+    }
 }
+
 .slick {
 
     &-btn{

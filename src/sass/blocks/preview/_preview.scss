@@ -3,37 +3,24 @@
     padding: 9.3rem 0 17.3rem 0;
     font-weight: 400;
     font-size: 1.8rem;
-    color: $white;
+    color: $color-white;
     &__left-block {
         width: 50rem;
     }
  
     &__info {
-        color: $darkwhite;
         display: flex;
         align-items: center;
         text-transform: uppercase;
-        :last-child {
-            margin-left: 5rem;
-        }
-        
         &-item {
             line-height: 2.2rem;
+            &:first-child {
+                margin-right: 5rem;
+            }
         }
     }   
-    .title {
-        text-align: left;
-        margin-top: 1.3rem;
-        font-size: 7.2rem;
-        line-height: 7.2rem;
-        color: $white;
-    }
-    .descr {
-        text-align: left;
-        margin-top: 2.2rem;
-        font-size: 2.2rem;
-        color: $white;
-    }
+    
+    
     .btn {
         margin-top: 5rem;
     }
