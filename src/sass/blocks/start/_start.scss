@@ -4,16 +4,9 @@
     background-color: $color-black;
     .container {
         display: flex;
-        flex-direction: row;
         align-items: top; 
         justify-content: space-between;
     }   
-    &__left-block {
-        .title {
-            color: $color-white;
-            text-align: left;
-        }
-    }
     &__right-block {
         width: 55rem;
         font-size: 2.2rem;
@@ -29,14 +22,6 @@
         -moz-text-decoration-line: underline;
         display: flex; 
         align-items: center;
-        &::after {
-            content: '';
-            display: inline-block;
-            width: 1.6rem;
-            height: 2.2rem;
-            margin-left: .5rem;
-            background: url('../icons/nextArrow.svg') center center / contain no-repeat
-        }
     }
     &__list-item {
         margin-top: 2.7rem;
